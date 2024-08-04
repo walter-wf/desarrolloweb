@@ -1,0 +1,401 @@
+/* Estilos Generales */
+body, html {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Encabezado */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.nav-link {
+    font-weight: bold;
+    color: #333;
+    margin: 0 1rem;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #333;
+}
+
+.social-icon:hover {
+    color: #007bff; 
+}
+
+/* Sección Bienvenida */
+.contenedor-bienvenida {
+    background: url('/assets/img/img6.jpg') no-repeat center center/cover;
+    color: #3600f8;
+    padding: 4rem 0;
+    text-align: center;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 4rem 2rem;
+}
+
+
+.bienvenido {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+
+
+/* Sección Autor del Mes */
+.contenedor-aparecer-autor1 {
+    background-color: #fff;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-autor {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contenedor-autor img {
+    max-width: 150px;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+.autor-titulo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.titulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.autor-fav {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.video {
+    color: #007bff;
+}
+
+.video:hover {
+    color: #0056b3;
+}
+
+/* Lectura Recomendada */
+.contenedor-libro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 4rem 2rem; 
+}
+
+.titulo-libro {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.titulo-libro h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.titulo-libro h2 {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.contenido-libro {
+    flex: 1 1 60%;
+    padding-right: 2rem;
+}
+
+.texto-recomendado {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.imagen-libro img {
+    width: 200px; /* Ajusta el ancho de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Opcional: añade esquinas redondeadas */
+}
+
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: #fff;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer .form-group input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer .form-group button {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer .form-group button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Galeria */
+
+
+/* Contenedor principal */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los cards horizontalmente */
+    margin: 0 -15px; /* Ajusta el margen para el diseño de grid */
+  }
+  
+  /* Card general */
+  .card.custom-card {
+    border: none; /* Elimina el borde por defecto del card */
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Oculta desbordamientos */
+    margin: 15px; /* Espaciado entre los cards */
+    transition: transform 0.2s ease; /* Animación suave al hacer hover */
+  }
+  
+  /* Imagen del card */
+  .card-img-fixed {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Cubre el área del contenedor sin distorsionar */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  /* Contenido del card */
+  .card-body {
+    padding: 1rem;
+  }
+  
+  /* Título del card */
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+  
+  /* Texto del card */
+  .card-text {
+    font-size: 1rem;
+    color: #666; /* Color de texto más suave */
+    margin-bottom: 1rem;
+  }
+  
+  /* Botón del card */
+  .custom-btn {
+    background-color: #007bff; /* Color del botón */
+    border: none; /* Elimina el borde del botón */
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none; /* Elimina el subrayado del enlace */
+    transition: background-color 0.3s ease; /* Animación al cambiar color */
+  }
+  
+  .custom-btn:hover {
+    background-color: #0056b3; /* Color del botón al hacer hover */
+  }
+  
+  /* Efecto hover en el card */
+  .card.custom-card:hover {
+    transform: scale(1.05); /* Escala el card al hacer hover */
+  }
+  
+  /* contacto */
+
+  /* Contenedor principal */
+.contenedor-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Distribuye el espacio uniformemente */
+    padding: 2rem 0;
+    background-color: #f8f9fa; /* Color de fondo claro */
+  }
+  
+  /* Estilo general para las tarjetas */
+  .card {
+    background-color: white; /* Fondo blanco para las tarjetas */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 1rem;
+    padding: 2rem;
+    flex: 1 1 45%; /* Ajuste flexible, con un tamaño mínimo del 45% */
+    max-width: 500px; /* Ancho máximo para las tarjetas */
+    transition: transform 0.2s ease; /* Animación suave al hacer hover */
+  }
+  
+  /* Efecto hover para las tarjetas */
+  .card:hover {
+    transform: scale(1.05); /* Escala la tarjeta al hacer hover */
+  }
+  
+  /* Estilo para la sección de contacto */
+  .contacto h1,
+  .contacto h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contacto input,
+  .contacto textarea {
+    width: 100%;
+    max-width: 400px; /* Ancho máximo de los campos */
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Estilo para el botón de enviar */
+  .contacto button {
+    background-color: #007bff; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+  }
+  
+  .contacto button:hover {
+    background-color: #0056b3; /* Color del botón al hacer hover */
+  }
+  
+  /* Estilo para la sección del mapa */
+  .mapa h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 10px;
+  }
+  
+
+
+
+
+  /* Sobre Nosotros */
+
+
+ 
+  
+/* Medios de comunicación responsivos */
+@media (max-width: 768px) {
+    .contenedor-autor, .contenedor-libro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-autor img, .imagen-libro img {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contenido-libro {
+        padding-right: 0;
+    }
+}

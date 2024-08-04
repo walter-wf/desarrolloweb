@@ -1,85 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desarrollo Web</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SmartBook - Blog de Libros: Reseñas, Recomendaciones y Noticias Literarias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
+  <meta name="keywords" content="libros, reseñas, recomendaciones, noticias literarias, lecturas, blog literario">
+
+  <meta property="og:title" content="SmartBook - Blog de Libros">
+  <meta property="og:description" content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
+  <meta property="og:url" content="">
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- Fuente de Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos de Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <header>
-    <h1>Sobre nosotros</h1>
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="./pages/productos.html">Productos</a></li>
-        <li><a href="./pages/galeria.html">Galería</a></li>
-        <li><a href="./pages/sobrenosotros.html">Nosotros</a></li>
-        <li><a href="./pages/contacto.html">Contacto</a></li>
+
+<!---------------------------------------------------------------------------------------- Header -------------------------------------------------------------------------------------------->
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+    <a class="navbar-brand mx-auto" href="./index.html">
+      <img src="./assets/img/logo.jpg" alt="logo">
+    </a>
+
+
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/galeria.html">Galería</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/libros.html">Libros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+        </li>
       </ul>
-    </nav>
-  </header>
-  <main>
-    <section>
-      <h2>Nuestra Historia</h2>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat maiores officia iste animi, itaque adipisci
-        id sint eum sequi delectus porro accusamus libero eaque ipsam, dolores sed voluptatum, quis totam.</p>
-    </section>
-    <section id="equipo">
-      <h2>Nuestro Equipo</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sed velit exercitationem! Nisi sit
-        recusandae dolorem dignissimos, cupiditate, fuga iusto ducimus nostrum, quas harum minima esse odit?
-        Excepturi, magni doloremque!</p>
-    </section>
+    </div>
 
-    <section>
-      <h2>Insertamos Imágenes</h2>
-      <img src="https://images.cdn1.buscalibre.com/fit-in/360x360/c6/27/c6276b30f0c71980dd7ec2a84c41a8b7.jpg"
-        alt="Libro Games Of Thrones">
-    </section>
+    <div class="ml-auto">
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a class="social-icon" href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </nav>
+</header>
 
-    <section>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/tF23cxphVPQ?si=FTSUJnlBpEeQZ9SL"
-        title="YouTube video player" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </section>
+<!--------------------------------------------------------------------------------- Sección Bienvenida ------------------------------------------------------------------------------------>
 
-    <section>
-      <h2>Lista</h2>
-      <h3>Lista Desordenada</h3>
-      <ul>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-      </ul>
+<section class="contenedor-bienvenida">
+  <div class="contenedor-libro-bienvenida">
+    <div class="contenedor-titulo">
+      <h1 class="bienvenido">¡Bienvenido, aficionado a la lectura!</h1>
+      <h2 class="titulo">Te invitamos a unirte a nosotros y sumergirte en esta emocionante aventura literaria. Descubre libros fascinantes que se ajusten a cada categoría, comparte tus experiencias de lectura y disfruta de la satisfacción de tacharlos de la lista.</h2>
+   
+    </div>
+  </div>
+</section>
 
-      <h3>Lista Ordenada</h3>
-      <ol>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-        <li>Item</li>
-      </ol>
+<!------------------------------------------------------------------------------------ Sección Autor  ------------------------------------------------------------------------------------->
 
-      <h3>Lista de Definición</h3>
-      <dl>
-        <dt>Eficacia</dt>
-        <dd>Capacidad de alcanzar el resultado deseado.</dd>
-        <dt>Eficiencia</dt>
-        <dd>Capacidad de alcanzar el resultado deseado con el menor uso de recursos.</dd>
-      </dl>
-    </section>
-  </main>
+<section class="contenedor-aparecer-autor1">
+  <div class="contenedor-autor">
+    <img class="Joe" src="/assets/img/joeaber.jpg" alt="Imagen Joe Abercrombie">
+    <div>
+      <h1 class="autor-titulo">¡Autor del Mes!</h1>
+      <h2 class="titulo">Joe Abercrombie</h2>
+      <h3><a class="video" href="https://www.youtube.com/watch?v=UApwCU92VTI" target="_blank">Entrevista sobre su último libro</a></h3>
+      <p class="autor-fav">Joe Abercrombie nació en Lancaster, Inglaterra. Fue educado en la Lancaster Royal Grammar School y estudió psicología en la Universidad de Mánchester. Comenzó a trabajar en la producción de televisión antes de iniciar una carrera como editor independiente de cine. Durante una pausa entre trabajos, empezó a escribir "La voz de las espadas" en 2002, la cual completó en 2004. Fue publicada por la editorial Gollanz en 2006. <a href="https://es.wikipedia.org/wiki/Joe_Abercrombie" target="_blank">Leer más</a>.</p>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>Encerrar el contenido de pie de página</p>
-  </footer>
+<!------------------------------------------------------------------------------  Lectura Recomendada  -------------------------------------------------------------------------->
+
+<section class="contenedor-libro">
+  <div class="titulo-libro">
+    <h1>Te Recomendamos</h1>
+    <h2>Los Jardines de La Luna</h2>
+  </div>
+  <div class="contenido-libro">
+    <p class="texto-recomendado">Existen numerosas razas inteligentes humanas, humanoides y no humanas en el mundo de Malaz, divididas según su procedencia de cada una de las cuatro razas originales de los Forkrul Assail, Jaghut, K'Chain Che'Malle e Imass, además de las razas Tiste invasoras: los Tiste Andii, Tiste Edur y Tiste Liosan. También existen razas de demonios inteligentes.</p>
+    <a href="https://es.wikipedia.org/wiki/Malaz:_El_Libro_de_los_Ca%C3%ADdos" target="_blank">Leer más</a>
+  </div>
+  <div class="imagen-libro">
+    <img class="malaz" src="./assets/img/malaz.jpg" alt="Malaz - Libro 1">
+  </div>
+</section>
+
+<!--------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------------------>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Links Útiles</h3>
+        <ul>
+          <li><a href="#">Sobre Nosotros</a></li>
+          <li><a href="#">Amigos Lectores</a></li>
+          <li><a href="#">Aventuras Sin Fin</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Newsletter</h3>
+        <form action="#" method="post">
+          <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
+          <button type="submit">Suscribirse</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ----------------------------------------------------- Footer --------------------------------------------------------------------------------------------------------- -->
+
+
 </body>
-
 </html>
