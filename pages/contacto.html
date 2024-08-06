@@ -2,39 +2,28 @@
 <html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>SmartBook - Blog de Libros: Reseñas, Recomendaciones y Noticias Literarias</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
-  <meta name="keywords" content="libros, reseñas, recomendaciones, noticias literarias, lecturas, blog literario">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>
+    SmartBook - Blog de Libros: Reseñas, Recomendaciones y Noticias Literarias
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta property="og:title" content="SmartBook - Blog de Libros">
-  <meta property="og:description" content="Bienvenido a SmartBook, un blog sobre libros donde encontrarás reseñas, recomendaciones y noticias del mundo literario. Descubre nuevas lecturas y comparte tus opiniones con otros amantes de los libros.">
-  <meta property="og:url" content="https://tusitio.com/contacto.html">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;700&display=swap"rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
 
-  <!-- Estilos CSS -->
-  <link rel="stylesheet" href="/css/styles.css">
-
-  <!-- Fuente de Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
-
-  <!-- Iconos de Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 
 </head>
 
 <body>
-
   <!---------------------------------------------------------------------------------------- Header -------------------------------------------------------------------------------------------->
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand mx-auto" href="../index.html">
-        <img src="../assets/img/logo.jpg" alt="logo">
+        <img src="../assets/img/logo.jpg" alt="logo" />
       </a>
 
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -47,7 +36,8 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./libros.html">Libros</a>
-          </li><li class="nav-item">
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contacto</a>
           </li>
         </ul>
@@ -69,8 +59,8 @@
           <h1>¡Envíanos un mensaje!</h1>
           <h2>Contacto</h2>
           <form name="contact" method="POST" data-netlify="true">
-            <input type="text" placeholder="Nombre" name="nombre" required>
-            <input type="email" placeholder="Correo electrónico" name="email" required>
+            <input type="text" placeholder="Nombre" name="nombre" required />
+            <input type="email" placeholder="Correo electrónico" name="email" required />
             <textarea placeholder="Mensaje" name="mensaje" required></textarea>
             <button type="submit">Enviar</button>
           </form>
@@ -83,15 +73,12 @@
           <h2>Ubicación</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9981418455424!2d-58.41730918509464!3d-34.61168766575857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca322eeb3dfd%3A0x2dcb0d7e44d8e15a!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1sen!2sar!4v1660775730743!5m2!1sen!2sar"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
   </main>
 </body>
-
-
-
 
 <!--------------------------------------------------------------------------------- Footer ------------------------------------------------------------------------------------------>
 
@@ -109,11 +96,12 @@
       <div class="col-md-4">
         <h3>Newsletter</h3>
         <form action="#" method="post">
-          <input type="email" name="email" placeholder="Ingrese su correo electrónico" required>
+          <input type="email" name="email" placeholder="Ingrese su correo electrónico" required />
           <button type="submit">Suscribirse</button>
         </form>
       </div>
     </div>
   </div>
 </footer>
+
 </html>
