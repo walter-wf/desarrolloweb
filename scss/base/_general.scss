@@ -1,25 +1,36 @@
 // _general.scss
+
+// Variables
+$font-family-base: 'Montserrat', sans-serif;
+$font-family-heading: 'Poppins', sans-serif;
+$background-color: #f4f4f4;
+$text-color: #333;
+$link-color: #007bff;
+$link-hover-color: #0056b3;
+
+// Importar fuentes
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
+// Estilos generales
 body, html {
-    font-family: 'Montserrat', sans-serif;
+    font-family: $font-family-base;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: $background-color;
+    color: $text-color;
     line-height: 1.6;
 }
 
 a {
-    color: #007bff;
+    color: $link-color;
     text-decoration: none;
 }
 
 a:hover {
-    color: #0056b3;
+    color: $link-hover-color;
     text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
+    font-family: $font-family-heading;
 }
