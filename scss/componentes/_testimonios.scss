@@ -1,0 +1,25 @@
+// _testimonios.scss
+.contenedor-testimonios {
+    padding: 4rem 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.testimonio {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.autor {
+    font-weight: bold;
+    font-size: 1rem;
+}
